@@ -1,6 +1,6 @@
 {
   "name": "Ukraine_GTA_NickChecker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -15,6 +15,7 @@
     "@google/genai": "^2.11.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
+    "electron-updater": "^6.8.9",
     "express": "^5.2.1"
   },
   "devDependencies": {
@@ -24,6 +25,11 @@
   "build": {
     "appId": "com.ukrainegta.nickchecker",
     "productName": "Ukraine GTA RP Nick Checker",
+    "publish": {
+      "provider": "github",
+      "owner": "kramskojvasa51-creator",
+      "repo": "NickCheckerAI"
+    },
     "win": {
       "target": [
         "nsis",
