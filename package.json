@@ -1,12 +1,12 @@
 {
-  "name": "nickcheckerai",
+  "name": "Ukraine_GTA_NickChecker",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-  "start": "electron .",
-  "build": "electron-builder"
-},
+    "start": "electron .",
+    "build": "electron-builder"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,9 +22,13 @@
     "electron-builder": "^26.15.3"
   },
   "build": {
-    "appId": "com.nickchecker.ai",
+    "appId": "com.ukrainegta.nickchecker",
+    "productName": "Ukraine GTA RP Nick Checker",
     "win": {
-      "target": "nsis"
+      "target": [
+        "nsis",
+        "portable"
+      ]
     }
   }
 }
