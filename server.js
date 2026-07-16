@@ -58,9 +58,10 @@ app.post("/check", async (req, res) => {
 for (let i = 0; i < 3; i++) {
     try {
         response = await ai.models.generateContent({
-          model: "gemini-2.5-flash"
-            contents: prompt,
-        });
+    model: "gemini-2.5-flash",
+    contents: prompt,
+});
+
         break;
     } catch (e) {
         if (e.code !== "ECONNRESET" && e.message !== "fetch failed") {
